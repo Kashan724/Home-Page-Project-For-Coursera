@@ -1,0 +1,237 @@
+body{
+    background-color: yellow;
+}
+.logo-section{
+    display: flex;;
+    width:1100px;
+    height:100px;
+    padding-left: 140px;
+    background-color: goldenrod;
+    align-self: baseline;
+    margin-left: 40px;
+    border-color: black;
+    border-radius: 30px;
+
+}
+.logo-section{
+opacity: 0;
+animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+.logo-section img{
+    width: 500px;
+}
+.logo-section h1{
+       align-items: center;
+       padding-left: 10px;
+       font-style: italic;
+       
+}
+.nav-section{
+    background-color:rgb(238, 215, 169); 
+    /*width: 434px;*/
+    font-family:sans-serif;
+    margin-top: 10px;
+    height: 10vh;
+    justify-content: flex-end;
+    border-radius: 30px;    
+}
+.navbar{
+    display: flex;
+    gap: 4.8rem;
+    align-items: center;
+    padding-left: 30px;
+    
+}
+.nav-section > nav{
+    padding:0 10px;
+}
+.nav-section nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 25px 0;
+    text-decoration: none;    
+}
+
+.nav-section nav li a{
+    text-decoration: none;
+}
+.nav-section nav li a:hover{
+    background-color: blue;
+    color: white;
+}
+.top-section{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    width: 1300px;
+    height: 170px;
+    background-color:greenyellow;
+    border-radius: 70px;
+    background-image: url("top1.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+.top-section > h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    
+}
+.top-section > p{
+    font-size: 22px;
+}
+
+.item-section{
+    display: flex;
+    background-color: white;
+       
+}
+.item-section > section{
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  background-color: gold;
+  width: 400px;
+  height: 390px;
+  border-radius: 20px;
+  
+}
+.item-section > section img{
+  transition: all 0.2s ease-in-out;
+}
+.item-section > section img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.jewelry > h3,.wedding-ring > h4,.artisans > h5{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.jewelry > #sec1-img,.wedding-ring > #sec2-img,.artisans > #sec3-img{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.jewelry > p,.wedding-ring > p,.artisans > p{
+    font-size: 16px;
+    font-style: oblique;
+}
+
+.item-section > section:hover{
+    opacity: 1;
+    background-color:goldenrod;
+}
+footer{
+    display: grid;
+    background-color: white;
+    grid-template-columns: auto auto;
+    height: 150px;
+    margin-top: 15px;
+}
+footer > img{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+footer > p{
+    text-align: right;
+    margin-right: 5px;
+}
+footer > #rights-id{
+    text-align: right;
+    margin-right: 5px;
+}
+@media (max-width: 1000px) {
+    .logo-section {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      margin: 0;
+    }
+    
+    
+    .nav-section {
+      justify-content: center;
+      border-radius: 0;
+      height: fit-content;
+    }
+    
+    .navbar {
+      display: block;
+      padding: 0;
+    }
+    
+    .nav-section nav li {
+      display: inline-block;
+      font-size: 16px;
+      padding: 10px;
+    }
+    
+    .nav-section nav li a:hover {
+      background-color: initial;
+      color: initial;
+    }
+    
+    .top-section {
+      margin: 20px 0;
+      padding: 10px;
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+    }
+    
+    .item-section {
+      display: block;
+    }
+    
+    .item-section > section {
+      margin: 10px auto;
+      width: 90%;
+      height: auto;
+    }
+    
+    .jewelry > h3,
+    .wedding-ring > h4,
+    .artisans > h5 {
+      font-size: 18px;
+      text-align: center;
+    }
+    
+    .jewelry > #sec1-img,
+    .wedding-ring > #sec2-img,
+    .artisans > #sec3-img {
+      margin-left: 0;
+    }
+    
+    .jewelry > p,
+    .wedding-ring > p,
+    .artisans > p {
+      font-size: 14px;
+    }
+    
+    footer {
+      grid-template-columns: 1fr;
+      text-align: center;
+      height: auto;
+      padding: 20px;
+    }
+    
+    footer > #footer-img {
+      margin: 0 auto 10px;
+    }
+    
+    footer > p {
+      margin: 0;
+    }
+  }
+  
